@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+.brand .card{
+    transition: 0.7s;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+.brand .card:hover{
+    transform: scale(1.2);
+}
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   background: #fff;
+   position: relative;
+   margin:6rem;
+   width: 44rem;
+
+   
+}  
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 2rem;
+}
+
+.products-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.preview .card{
+    transition: 0.7s;
+}
+.preview .card:hover{
+    transform: scale(1.2);
+}
+
+
+.products-preview-1{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview-1 .preview-1{
+   display: none;
+   padding:2rem;
+   background: #fff;
+   position: relative;
+   margin:6rem;
+   width: 36rem;
+   height: 17rem;
+}  
+
+.products-preview-1 .preview-1.active{
+   display: inline-block;
+}
+
+
+.products-preview-1 .preview-1 .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 2rem;
+}
+
+.products-preview-1 .preview-1 .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.preview-1 .card{
+   transition: 0.7s;
+}
+.preview-1 .card:hover{
+   transform: scale(1.2);
+}
