@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+     <script src="https://kit.fontawesome.com/82ad4ee6e7.js" crossorigin="anonymous"></script>
+   
+    </head>
+<body>
+  <div class="sidebar close" style="background-color: #161038;">
+    <div class="logo-details" >
+      <a class="navbar-brand" href="#">
+        <img src="image/WhatsApp Image 2022-05-20 at 3.59.59 PM.jpeg" alt="" class="d-inline-block align-text-top" >
+      </a>
+      <span  class="logo_name">Online Car Servicing</span>
+    </div>
+    <ul class="nav-links">
+      
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">HOME</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">HOME</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Product</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Product</a></li>
+          <li>
+           <a href="#">ADD</a>
+          </li>
+          <li><a href="#">REMOVE</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Employee</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Employee</a></li>
+          <li><a href="#">ADD</a></li>
+          <li><a href="#">REMOVE</a></li>
+          <li><a href="#">VIEW</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span class="link_name">Customer Appointment</span><br>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Customer Appointment</a></li><br>
+          <li><a href="#">VIEW</a></li>
+        </ul>
+      </li>
+      
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name">ADMIN</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Explore</span>
+    </div>
+  </section>
+  
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
