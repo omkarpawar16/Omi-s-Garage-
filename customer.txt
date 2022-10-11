@@ -1,0 +1,8 @@
+create table customer(
+	name varchar(20),
+	mbNo varchar(20),
+	addr varchar(20),
+	eMail varchar(20),
+	pass varchar(20),
+	rPass varchar(20)
+);
